@@ -1,0 +1,46 @@
+main{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.word{
+
+    margin: 3px;
+    border-radius: 10px;
+    display: inline-block;
+    
+
+}
+
+.word:nth-child(odd){
+    background-color: rgb(139, 206, 139);
+}
+
+.word:nth-child(even){
+    background-color: rgb(139, 177, 206);
+}
+
+#wordbotOutput{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+ 
+}
+
+.wordRow{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-group{
+    width: 30%;
+    margin: auto;
+}
+
+.word a{
+    text-decoration: none; 
+    color: black;
+    display: block;
+    padding: 10px;
+}
