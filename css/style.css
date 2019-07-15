@@ -1,15 +1,21 @@
 main{
     text-align: center;
-    padding-top: 10px;
+
+    padding: 10px;
+}
+
+#wordbotOutput{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .word{
-
     margin: 3px;
     border-radius: 10px;
-    display: inline-block;
-    
-
+    display: block;
 }
 
 .word:nth-child(odd){
@@ -20,27 +26,25 @@ main{
     background-color: rgb(139, 177, 206);
 }
 
-#wordbotOutput{
-    width: 70%;
-    margin: auto;
-    text-align: center;
- 
-}
-
-.wordRow{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.form-group{
-    width: 30%;
-    margin: auto;
-}
-
 .word a{
     text-decoration: none; 
     color: black;
     display: block;
     padding: 10px;
+}
+
+
+
+
+button{
+    width: 100%;
+}
+
+
+@media(min-width: 768px){
+    #wordbotOutput{
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 800px;
+    }
 }
